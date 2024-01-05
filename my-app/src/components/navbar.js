@@ -2,6 +2,7 @@ import { useRef } from "react";
 import React from "react";
 import {FaApple, FaBars, FaTiles, FaTimes} from "react-icons/fa";
 import "../styles/main.css";
+import CartWidget from "./CartWidget";
 
 function Navbar() {
     const navRef = useRef();
@@ -19,6 +20,10 @@ function Navbar() {
             <a href="">Categories</a>
             <a href="">Shop</a>
             <a href="">About us</a>
+            <a href="">
+                <CartWidget/>
+            </a>
+            
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <FaTimes/>
             </button>
